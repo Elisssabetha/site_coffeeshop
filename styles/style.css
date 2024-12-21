@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat Alternates";
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background: rgb(255, 255, 255);
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__link-box {
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  align-items: center;
+}
+.header__link-list {
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+.header__link {
+  color: rgb(69, 64, 61);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  text-align: left;
+}
+.header__link:hover {
+  text-decoration: underline;
+}
+.header__btn {
+  border: 1px solid rgb(162, 101, 57);
+  border-radius: 24px;
+  color: rgb(162, 101, 57);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  height: 52px;
+  width: 169px;
+  padding: 16px 36px 16px 36px;
+  font-family: "Montserrat Alternates";
+  background-color: transparent;
+}
+.header__btn:hover {
+  background: rgb(162, 101, 57);
+  color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.main {
+  background: rgb(246, 245, 244);
+  min-height: 770px;
+  display: flex;
+  margin-top: 120px;
+  padding-left: calc(50% - 600px);
+  width: 100vw;
+}
+.main__info {
+  max-width: 586px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-top: 119px;
+}
+.main__title {
+  color: rgb(69, 64, 61);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 123%;
+  width: 556px;
+}
+.main__subtitle {
+  color: rgb(69, 64, 61);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 121%;
+  max-width: 450px;
+}
+.main__text {
+  color: rgb(69, 64, 61);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  display: block;
+  max-width: 499px;
+  margin-bottom: 8px;
+}
+.main__btn {
+  border: 1px solid rgb(162, 101, 57);
+  border-radius: 24px;
+  font: inherit;
+  color: rgb(162, 101, 57);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  width: 366px;
+  height: 52px;
+  background: transparent;
+  margin-top: 8px;
+}
+.main__btn:hover {
+  background: rgb(162, 101, 57);
+  color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+.main__images {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 770px;
+}
+.main__board-img {
+  position: absolute;
+  z-index: 0;
+  top: -50px;
+  left: -22px;
+}
+.main__cookie-img {
+  position: absolute;
+  z-index: 1;
+  top: 370px;
+  left: -10px;
+  transition: transform 0.7s;
+}
+.main__cookie-img:hover {
+  transform: rotate(-16.36deg);
+}
+.main__coffee-bean-img {
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 400px;
+}
+.main__coffeecup-img {
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: -28px;
+  transition: transform 0.7s;
+}
+.main__coffeecup-img:hover {
+  transform: rotate(-10.44deg);
+}
+.main__cinnamon-img {
+  position: absolute;
+  z-index: 1;
+  left: 265px;
+  top: 200px;
+  transition: transform 0.7s;
+}
+.main__cinnamon-img:hover {
+  transform: rotate(-16.36deg);
+}
+
+.menu {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: rgb(246, 245, 244);
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__controls {
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.menu__title {
+  color: rgb(69, 64, 61);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 123%;
+}
+.menu__controls {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.menu__label {
+  cursor: pointer;
+  border: 1px solid rgb(162, 101, 57);
+  border-radius: 24px;
+  width: 120px;
+  height: 45px;
+  color: rgb(162, 101, 57);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 121%;
+  text-align: center;
+  padding-top: 14px;
+  display: block;
+  background: transparent;
+}
+.menu__label:hover {
+  background: rgb(162, 101, 57);
+  color: rgb(255, 255, 255);
+}
+.menu__input {
+  display: none;
+}
+.menu__cards {
+  display: none;
+  margin-top: 48px;
+}
+.menu__input:checked + .menu__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.product-card {
+  border-radius: 24px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+  background: rgb(255, 255, 255);
+  max-width: 276px;
+  height: 410px;
+}
+.product-card__img {
+  background: rgb(222, 222, 222);
+  width: 276px;
+  height: 276px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card__info {
+  margin: 20px 20px;
+}
+.product-card__price {
+  color: rgb(69, 64, 61);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 121%;
+}
+.product-card__desc {
+  margin-top: 7px;
+  color: rgb(69, 64, 61);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121%;
+}
+.product-card__vol {
+  margin-top: 7px;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121%;
+}
+
+.snowflake {
+  z-index: 1001;
+  position: absolute;
+  top: -10%;
+  font-size: 24px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+/* Анимация падения снежинки */
+@keyframes fall {
+  to {
+    transform: translateY(250vh);
+  }
+}
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 7s;
+}
+
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 9s;
+}
+
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 8s;
+}
+
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 10s;
+}
+
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 7.5s;
+}
+
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 9.5s;
+}
+
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 8.5s;
+}
+
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 11s;
+}
+
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 6.5s;
+}/*# sourceMappingURL=style.css.map */
