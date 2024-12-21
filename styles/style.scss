@@ -203,16 +203,10 @@ a {
     padding-top: 64px;
     padding-bottom: 64px;
     background: rgb(246, 245, 244, 1);
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__controls {
-        display: flex;
-        column-gap: 7px;
-    }
+    display: flex;
+    justify-content: space-between;
+    column-gap: 672px;
+    flex-wrap: wrap;
 
     &__title {
         color: rgb(69, 64, 61);
@@ -221,9 +215,9 @@ a {
         line-height: 123%;
     }
 
-    &__controls {
+    &__label-block {
         display: flex;
-        column-gap: 10px;
+        column-gap: 7px;
     }
 
     &__label {
@@ -240,6 +234,7 @@ a {
         padding-top: 14px;
         display: block;
         background: transparent;
+        transition: all 0.7s;
     }
 
     &__label:hover {
@@ -256,18 +251,20 @@ a {
         margin-top: 48px;
     }
 
-    &__input:checked+.menu__cards {
+    #coffee:checked~.coffee,
+    #snacks:checked~.snacks,
+    #desserts:checked~.desserts {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
     }
 
-    // #coffee:checked~.menu__controls .menu__label[for="coffee"],
-    // #desserts:checked~.menu__controls .menu__label[for="desserts"],
-    // #snacks:checked~.menu__controls .menu__label[for="snacks"] {
-    //     background: rgb(162, 101, 57);
-    //     color: rgb(255, 255, 255);
-    // }
+    #coffee:checked ~ .menu__label-block label[for="coffee"],
+    #desserts:checked ~ .menu__label-block label[for="desserts"],
+    #snacks:checked ~ .menu__label-block label[for="snacks"] {
+        background: rgb(162, 101, 57);
+        color: rgb(255, 255, 255);
+    }
 
 }
 

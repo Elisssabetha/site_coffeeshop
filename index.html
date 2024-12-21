@@ -32,7 +32,7 @@
         <div class="header__link-box">
             <ul class="header__link-list">
                 <li><a class="header__link" href="#">О нас</a></li>
-                <li><a class="header__link" href="#">Меню</a></li>
+                <li><a class="header__link" href="#menu">Меню</a></li>
                 <li><a class="header__link" href="#">Отзывы</a></li>
                 <li><a class="header__link" href="#">Контакты</a></li>
             </ul>
@@ -65,19 +65,22 @@
         </div>
     </main>
 
-    <section class="menu center">
+    <section class="menu center" id="menu">
 
-        <div class="menu__header">
-            <h2 class="menu__title">Меню</h2>
-            <div class="menu__controls">
-                <label class="menu__label" for="coffee">Кофе</label>
-                <label class="menu__label" for="desserts">Десерты</label>
-                <label class="menu__label" for="snacks">Закуски</label>
-            </div>
-        </div>
+
+        <h2 class="menu__title">Меню</h2>
 
         <input type="radio" checked id="coffee" class="menu__input" name="menu" value="coffee">
-        <div class="menu__cards">
+        <input type="radio" id="desserts" class="menu__input" name="menu" value="desserts">
+        <input type="radio" id="snacks" class="menu__input" name="menu" value="snacks">
+
+        <div class="menu__label-block">
+            <label class="menu__label" for="coffee">Кофе</label>
+            <label class="menu__label" for="desserts">Десерты</label>
+            <label class="menu__label" for="snacks">Закуски</label>
+        </div>
+
+        <div class="menu__cards coffee">
             <article class="product-card">
                 <div class="product-card__img">
                     <img src="./styles/images/menu/coffee/cappuccino_almond.png"
@@ -92,8 +95,8 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/latte_coconut.png"
-                        alt="кружка кофе латте на кокосовом молоке" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/latte_coconut.png" alt="кружка кофе латте на кокосовом молоке"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">270₽</h3>
@@ -104,8 +107,7 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/raf.png"
-                        alt="кружка кофе раф" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/raf.png" alt="кружка кофе раф" class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">360₽</h3>
@@ -116,8 +118,8 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/americano.png"
-                        alt="кружка кофе американо" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/americano.png" alt="кружка кофе американо"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">160₽</h3>
@@ -128,8 +130,8 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/flate-white.png"
-                        alt="кружка кофе флет уайт" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/flate-white.png" alt="кружка кофе флет уайт"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">160₽</h3>
@@ -140,8 +142,8 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/latte_oat.png"
-                        alt="кружка кофе латте на овсяном молоке" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/latte_oat.png" alt="кружка кофе латте на овсяном молоке"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">270₽</h3>
@@ -152,8 +154,8 @@
 
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/espresso_double.png"
-                        alt="кружка кофе двойной эспрессо" class="product-card__image">
+                    <img src="./styles/images/menu/coffee/espresso_double.png" alt="кружка кофе двойной эспрессо"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">180₽</h3>
@@ -175,8 +177,8 @@
             </article>
         </div>
 
-        <input type="radio" id="desserts" class="menu__input" name="menu" value="desserts">
-        <div class="menu__cards">
+        
+        <div class="menu__cards desserts">
             <article class="product-card">
                 <div class="product-card__img">
                     <img src="./styles/images/menu/dessert/cinnamon.png" alt="синабон" class="product-card__image">
@@ -199,7 +201,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/creme-brulee.png" alt="крем-брюле" class="product-card__image">
+                    <img src="./styles/images/menu/dessert/creme-brulee.png" alt="крем-брюле"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">360₽</h3>
@@ -209,7 +212,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/snail-pastry.png" alt="улитка с джемом" class="product-card__image">
+                    <img src="./styles/images/menu/dessert/snail-pastry.png" alt="улитка с джемом"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">270₽</h3>
@@ -219,7 +223,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/chocolate-cake.png" alt="шоколадный торт" class="product-card__image">
+                    <img src="./styles/images/menu/dessert/chocolate-cake.png" alt="шоколадный торт"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">160₽</h3>
@@ -229,11 +234,12 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/raspberry-cake.png" alt="тарталетка с малиной" class="product-card__image">
+                    <img src="./styles/images/menu/dessert/raspberry-cake.png" alt="тарталетка с малиной"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">180₽</h3>
-                    <p class="product-card__desc">Шоколадная тарталетка с кремом и  малиной</p>
+                    <p class="product-card__desc">Шоколадная тарталетка с кремом и малиной</p>
                     <p class="product-card__vol">150 гр</p>
                 </div>
             </article>
@@ -259,8 +265,8 @@
             </article>
         </div>
 
-        <input type="radio" id="snacks" class="menu__input" name="menu" value="snacks">
-        <div class="menu__cards">
+        
+        <div class="menu__cards snacks">
             <article class="product-card">
                 <div class="product-card__img">
                     <img src="./styles/images/menu/snack/almond.png" alt="миндаль" class="product-card__image">
@@ -293,7 +299,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/poppy-maffin.png" alt="булочка с маком" class="product-card__image">
+                    <img src="./styles/images/menu/snack/poppy-maffin.png" alt="булочка с маком"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">160₽</h3>
@@ -313,7 +320,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/cookie-chocolate.png" alt="мягкое печенье" class="product-card__image">
+                    <img src="./styles/images/menu/snack/cookie-chocolate.png" alt="мягкое печенье"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">160₽</h3>
@@ -333,7 +341,8 @@
             </article>
             <article class="product-card">
                 <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/samosa.png" alt="треугольные пирожки" class="product-card__image">
+                    <img src="./styles/images/menu/snack/samosa.png" alt="треугольные пирожки"
+                        class="product-card__image">
                 </div>
                 <div class="product-card__info">
                     <h3 class="product-card__price">240₽</h3>
@@ -343,7 +352,6 @@
             </article>
         </div>
     </section>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
