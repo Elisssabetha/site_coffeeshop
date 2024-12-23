@@ -1,0 +1,149 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .header {
+        &__link-box {
+            column-gap: 24px;
+        }
+
+        &__link-list {
+            column-gap: 24px;
+        }
+    }
+
+    .main {
+        padding-left: calc(50% - 393px);
+
+        &__info {
+            width: 350px;
+            row-gap: 18px;
+        }
+
+        &__coffeecup-img {
+            width: auto;
+            max-height: 50%;
+            top: 90px;
+        }
+
+        &__board-img {
+            width: auto;
+            height: 90%;
+            top: 50px;
+
+        }
+
+        &__coffee-bean-img {
+            width: auto;
+            max-height: 50%;
+            top: 150px;
+            left: 250px;
+        }
+
+        &__cookie-img {
+            width: auto;
+            max-height: 50%;
+        }
+
+        &__cinnamon-img {
+            width: auto;
+            max-height: 50%;
+            top: 300px;
+        }
+
+        &__btn {
+            margin-top: 0;
+        }
+
+
+
+
+    }
+
+    .menu {
+        &__cards {
+            justify-content: center;
+        }
+    }
+
+    .product-card {
+        width: 240px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header {
+        &__link-box {
+            column-gap: 20px;
+        }
+
+        &__link-list {
+            justify-content: space-between;
+        }
+
+        &__btn {
+            width: 130px;
+            padding: 0;
+        }
+    }
+
+    .main {
+        padding-left: 24px;
+
+        &__coffeecup-img {
+            width: auto;
+            max-height: 40%;
+            top: 150px;
+        }
+
+        &__board-img {
+            width: auto;
+            height: 90%;
+            top: 50px;
+
+        }
+
+        &__coffee-bean-img {
+            width: auto;
+            max-height: 40%;
+            top: 140px;
+            left: 200px;
+        }
+
+        &__cookie-img {
+            width: auto;
+            max-height: 40%;
+            top: 400px;
+        }
+
+        &__cinnamon-img {
+            width: auto;
+            max-height: 40%;
+            top: 340px;
+            left: 200px;
+        }
+
+    }
+
+    .menu {
+        &__cards {
+            justify-content: center;
+        }
+    }
+
+    .product-card {
+        width: 210px;
+        &__image {
+           width: 90%;
+           height: auto;
+        }
+    }
+}

@@ -205,7 +205,6 @@ a {
     background: rgb(246, 245, 244, 1);
     display: flex;
     justify-content: space-between;
-    column-gap: 672px;
     flex-wrap: wrap;
 
     &__title {
@@ -249,6 +248,7 @@ a {
     &__cards {
         display: none;
         margin-top: 48px;
+        justify-content: center;
     }
 
     #coffee:checked~.coffee,
@@ -273,11 +273,11 @@ a {
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
     background: rgb(255, 255, 255);
     max-width: 276px;
-    height: 410px;
+    min-height: 410px;
 
     &__img {
         background: rgb(222, 222, 222, 1);
-        width: 276px;
+        max-width: 276px;
         height: 276px;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
@@ -377,3 +377,7 @@ a {
     left: 90%;
     animation-duration: 6.5s;
 }
+
+@import 'tablet';
+
+@import 'mobile';
