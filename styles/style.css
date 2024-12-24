@@ -471,7 +471,7 @@ a {
   .header__link-box {
     display: none;
   }
-  .header__link-box__mobile {
+  .header__link-box-mobile {
     display: flex;
   }
   .header__link-list {
