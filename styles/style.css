@@ -36,7 +36,7 @@ a {
        column-gap: 48px;
   align-items: center;
 }
-.header__link-box__mobile {
+.header__link-box-mobile {
   display: none;
 }
 .header__link-list {
