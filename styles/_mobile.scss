@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 90px;
+
+        &__link img {
+            width: 24px;
+            height: auto;
+        }
+
+        &__link-box {
+            display: none;
+        }
+
+        &__link-box__mobile {
+            display: flex;
+        }
+
+        &__link-list {
+            flex-wrap: wrap;
+            width: 60px;
+            column-gap: 8px;
+        }
+    }
+
+    .main {
+        margin-top: 90px;
+        flex-direction: column;
+        padding-left: 16px;
+
+        &__info {
+            padding-top: 50px;
+            align-self: center;
+        }
+
+        &__title {
+            font-size: 36px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        &__btn {
+            width: 240px;
+            height: 48px;
+            align-self: center;
+            font-size: 14px;
+        }
+    }
+
+    .menu {
+        justify-content: center;
+        row-gap: 24px;
+        column-gap: 64px;
+
+        &__title {
+            font-size: 36px;
+        }
+
+        // &__label-block {
+    
+        // }
+
+        &__label {
+            width: 100px;
+        }
+
+        &__cards {
+            margin-top: 16px;
+        }
+
+        #coffee:checked~.coffee,
+        #snacks:checked~.snacks,
+        #desserts:checked~.desserts {
+            gap: 16px;
+        }
+    }
+
+    .product-card {
+        height: 350px;
+        width: 300px;
+
+        &__price {
+            font-size: 20px;
+        }
+
+        &__desc, &__vol {
+            font-size: 12px;
+        }
+    }
+}

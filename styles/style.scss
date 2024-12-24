@@ -36,6 +36,10 @@ a {
         align-items: center;
     }
 
+    &__link-box__mobile {
+        display: none;
+    }
+
     &__link-list {
         list-style-type: none;
         display: flex;
@@ -85,7 +89,7 @@ a {
     width: 100vw;
 
     &__info {
-        max-width: 586px;
+        width: 586px;
         display: flex;
         flex-direction: column;
         row-gap: 24px;
@@ -97,7 +101,7 @@ a {
         font-size: 48px;
         font-weight: 700;
         line-height: 123%;
-        width: 556px;
+        width: 586px;
     }
 
     &__subtitle {
@@ -119,6 +123,7 @@ a {
     }
 
     &__btn {
+        display: block;
         border: 1px solid rgb(162, 101, 57);
         border-radius: 24px;
         font: inherit;
@@ -130,6 +135,9 @@ a {
         height: 52px;
         background: transparent;
         margin-top: 8px;
+        padding: 16px 36px 16px 36px;
+        text-align: center;
+
     }
 
     &__btn:hover {
