@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat Alternates";
 }
@@ -70,18 +74,22 @@ a {
         padding: 16px 36px 16px 36px;
         font-family: "Montserrat Alternates";
         background-color: transparent;
+        transition: all 1s;
     }
 
     &__btn:hover {
         background: rgb(162, 101, 57);
         color: rgb(255, 255, 255);
-        transition: all 1s;
+
     }
 }
 
-
 .main {
     background: rgb(246, 245, 244, 1);
+}
+
+.main-page {
+
     min-height: 770px;
     display: flex;
     margin-top: 120px;
@@ -137,13 +145,14 @@ a {
         margin-top: 8px;
         padding: 16px 36px 16px 36px;
         text-align: center;
+        transition: all 1s;
 
     }
 
     &__btn:hover {
         background: rgb(162, 101, 57);
         color: rgb(255, 255, 255);
-        transition: all 1s;
+
     }
 
     &__images {
@@ -206,11 +215,67 @@ a {
 
 }
 
+.about-us {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__title {
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 123%;
+    }
+
+    &__cards-box {
+        margin-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+.info-card {
+    display: flex;
+    max-width: 584px;
+    border-radius: 24px 24px 24px 0px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+
+    &__info-box {
+        padding: 20px;
+
+    }
+
+    &__title {
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 121%;
+        margin-bottom: 14px;
+    }
+
+    &__desc {
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 121%;
+        text-align: justify;
+        margin-bottom: 8px;
+    }
+
+    &__img {
+        transition: transform 0.7s;
+    }
+}
+
+.info-card:hover .info-card__img {
+    transform: scale(1.1);
+}
 
 .menu {
     padding-top: 64px;
     padding-bottom: 64px;
-    background: rgb(246, 245, 244, 1);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -267,9 +332,9 @@ a {
         gap: 32px;
     }
 
-    #coffee:checked ~ .menu__label-block label[for="coffee"],
-    #desserts:checked ~ .menu__label-block label[for="desserts"],
-    #snacks:checked ~ .menu__label-block label[for="snacks"] {
+    #coffee:checked~.menu__label-block label[for="coffee"],
+    #desserts:checked~.menu__label-block label[for="desserts"],
+    #snacks:checked~.menu__label-block label[for="snacks"] {
         background: rgb(162, 101, 57);
         color: rgb(255, 255, 255);
     }
@@ -277,6 +342,7 @@ a {
 }
 
 .product-card {
+    transition: transform 0.7s;
     border-radius: 24px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
     background: rgb(255, 255, 255);
@@ -324,66 +390,71 @@ a {
 
 }
 
-
-.snowflake {
-    z-index: 1001;
-    position: absolute;
-    top: -10%;
-    font-size: 24px;
-    opacity: 0.8;
-    animation: fall linear infinite;
+.product-card:hover {
+    transform: scale(1.05);
 }
 
-/* Анимация падения снежинки */
-@keyframes fall {
-    to {
-        transform: translateY(250vh);
+.reviews {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__title {
+        color: rgb(69, 64, 61);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 123%;
+    }
+
+    &__container {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
     }
 }
 
-.snowflake:nth-child(1) {
-    left: 10%;
-    animation-duration: 7s;
-}
+.review-card {
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.14);
+    background: rgb(255, 255, 255);
+    width: 378px;
+    height: 208px;
 
-.snowflake:nth-child(2) {
-    left: 20%;
-    animation-duration: 9s;
-}
+    &__person-box {
+        display: flex;
+        column-gap: 20px;
+    }
 
-.snowflake:nth-child(3) {
-    left: 30%;
-    animation-duration: 8s;
-}
+    &__img {
+        width: 63px;
+    }
 
-.snowflake:nth-child(4) {
-    left: 40%;
-    animation-duration: 10s;
-}
+    &__mark-box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+    }
 
-.snowflake:nth-child(5) {
-    left: 50%;
-    animation-duration: 7.5s;
-}
+    &__name {
+        color: rgb(69, 64, 61);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 121%;
+    }
 
-.snowflake:nth-child(6) {
-    left: 60%;
-    animation-duration: 9.5s;
-}
+    &__star-box {
+        display: flex;
 
-.snowflake:nth-child(7) {
-    left: 70%;
-    animation-duration: 8.5s;
-}
+    }
 
-.snowflake:nth-child(8) {
-    left: 80%;
-    animation-duration: 11s;
-}
-
-.snowflake:nth-child(9) {
-    left: 90%;
-    animation-duration: 6.5s;
+    &__text {
+        color: rgb(69, 64, 61);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 121%;
+        margin-top: 17.25px;
+    }
 }
 
 @import 'tablet';

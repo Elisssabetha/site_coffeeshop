@@ -1,370 +1,742 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кофейня "Зернышко"</title>
-    <link rel="icon" href="./styles/images/coffecup.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./styles/images/coffecup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<body>
-    <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-    </div>
-
+  <body>
     <header class="header center">
-        <a href="index.html" class="header__logo-link"><img src="./styles/images/logo.svg"
-                alt="логотип с текстом Зернышко" class="header__img"></a>
-        <div class="header__link-box">
-            <ul class="header__link-list">
-                <li><a class="header__link" href="#about_us">О нас</a></li>
-                <li><a class="header__link" href="#menu">Меню</a></li>
-                <li><a class="header__link" href="#">Отзывы</a></li>
-                <li><a class="header__link" href="#">Контакты</a></li>
-            </ul>
-            <button class="header__btn">Связаться</button>
-        </div>
+      <a href="index.html" class="header__logo-link"
+        ><img
+          src="./styles/images/logo.svg"
+          alt="логотип с текстом Зернышко"
+          class="header__img"
+      /></a>
+      <div class="header__link-box">
+        <ul class="header__link-list">
+          <li><a class="header__link" href="#about_us">О нас</a></li>
+          <li><a class="header__link" href="#menu">Меню</a></li>
+          <li><a class="header__link" href="#reviews">Отзывы</a></li>
+          <li><a class="header__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <button class="header__btn">Связаться</button>
+      </div>
 
-        <div class="header__link-box-mobile">
-            <ul class="header__link-list">
-                <li><a class="header__link" href="#about_us"><img src="./styles/images/about_us.svg" alt=""></a></li>
-                <li><a class="header__link" href="#menu"><img src="./styles/images/menu.svg" alt=""></a></li>
-                <li><a class="header__link" href="#"><img src="./styles/images/feedback.svg" alt=""></a></li>
-                <li><a class="header__link" href="#"><img src="./styles/images/contacts.svg" alt=""></a></li>
-            </ul>
-        </div>
-
-
-        
+      <div class="header__link-box-mobile">
+        <ul class="header__link-list">
+          <li>
+            <a class="header__link" href="#about_us"
+              ><img src="./styles/images/about_us.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="header__link" href="#menu"
+              ><img src="./styles/images/menu.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="header__link" href="#reviews"
+              ><img src="./styles/images/feedback.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="header__link" href="#contacts"
+              ><img src="./styles/images/contacts.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="main" id="about_us">
-        <div class="main__info">
-            <h1 class="main__title">Добро пожаловать в «Зернышко»</h1>
-            <h3 class="main__subtitle">Ароматный кофе и уютная атмосфера каждый день</h3>
-            <div class="">
-                <p class="main__text">Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение,
-                    созданное
-                    для вас.</p>
-                <p class="main__text">Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу о природе. Наши
-                    бариста рады подарить
-                    вам
-                    вкус и уют, из-за которых захочется возвращаться снова и снова.</p>
+    <main class="main">
+      <section class="main-page">
+        <div class="main-page__info">
+          <h1 class="main-page__title">Добро пожаловать в «Зернышко»</h1>
+          <h3 class="main-page__subtitle">
+            Ароматный кофе и уютная атмосфера каждый день
+          </h3>
+          <div class="">
+            <p class="main-page__text">
+              Мы готовим кофе с душой и верим, что каждая чашка — это маленькое
+              наслаждение, созданное для вас.
+            </p>
+            <p class="main-page__text">
+              Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу
+              о природе. Наши бариста рады подарить вам вкус и уют, из-за
+              которых захочется возвращаться снова и снова.
+            </p>
+          </div>
+          <a class="main-page__btn" href="#menu">Посмотреть меню</a>
+        </div>
+
+        <div class="main-page__images">
+          <img
+            src="./styles/images/board.png"
+            alt="кухонная доска"
+            class="main-page__board-img"
+          />
+          <img
+            src="./styles/images/cup_of_coffee.png"
+            alt="кружка кофе"
+            class="main-page__coffeecup-img"
+          />
+          <img
+            src="./styles/images/coffee_bean.png"
+            alt="кофейные зерна"
+            class="main-page__coffee-bean-img"
+          />
+          <img
+            src="./styles/images/cinabon.png"
+            alt="синабон"
+            class="main-page__cinnamon-img"
+          />
+          <img
+            src="./styles/images/cookie.png"
+            alt="печенька"
+            class="main-page__cookie-img"
+          />
+        </div>
+      </section>
+
+      <section class="about-us center" id="about_us">
+        <h2 class="about-us__title">О нас</h2>
+        <div class="about-us__cards-box">
+          <article class="info-card">
+            <img
+              src="./styles/images/history.jpg"
+              alt="столы в кофейне"
+              class="info-card__img"
+            />
+            <div class="info-card__info-box">
+              <h4 class="info-card__title">История</h4>
+              <p class="info-card__desc">
+                «Зернышко» — кофейня, которая родилась из любви к хорошему кофе
+                и желания создать место уюта для каждого.
+              </p>
+              <p class="info-card__desc">
+                Открытая в 2020 году, кофейня быстро стала любимой как для
+                ценителей кофе, так и для тех, кто просто ищет спокойное место
+                для отдыха.
+              </p>
             </div>
-        <a class="main__btn" href="#menu">Посмотреть меню</a>
+          </article>
+          <article class="info-card">
+            <img
+              src="./styles/images/philosophy.jpg"
+              alt="кружка кофе, в которую наливают молоко"
+              class="info-card__img"
+            />
+            <div class="info-card__info-box">
+              <h4 class="info-card__title">Философия</h4>
+              <p class="info-card__desc">
+                Мы верим, что каждая чашка кофе — это особый момент.
+              </p>
+              <p class="info-card__desc">
+                Стремимся создать теплую дружелюбную атмосферу, где каждый гость
+                чувствует себя как дома.
+              </p>
+              <p class="info-card__desc">
+                Наши бариста с заботой подходят к каждому заказу, создавая
+                напитки с любовью и вниманием к деталям.
+              </p>
+            </div>
+          </article>
+          <article class="info-card">
+            <img
+              src="./styles/images/coffeebeans.jpg"
+              alt="кофейные зерна"
+              class="info-card__img"
+            />
+            <div class="info-card__info-box">
+              <h4 class="info-card__title">Свежее зерно</h4>
+              <p class="info-card__desc">
+                Мы используем только свежие зерна и экспериментируем с
+                оригинальными рецептами, чтобы радовать гостей уникальными
+                вкусами. 
+              </p>
+              <p class="info-card__desc">
+                Наша команда сотрудничает с локальными обжарщиками,
+                поддерживая высокое качество и разнообразие.
+              </p>
+            </div>
+          </article>
+          <article class="info-card">
+            <img
+              src="./styles/images/coffecup.jpg"
+              alt="кофе в стаканчике"
+              class="info-card__img"
+            />
+            <div class="info-card__info-box">
+              <h4 class="info-card__title">Забота о природе</h4>
+              <p class="info-card__desc">
+                Мы стараемся уменьшить экологический след, используя
+                биоразлагаемые стаканчики и предлагая скидки для тех, кто
+                приходит со своей чашкой.
+              </p>
+              <p class="info-card__desc">
+                Мы заботимся не только о клиентах, но и о планете.
+              </p>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <div class="main__images">
-            <img src="./styles/images/board.png" alt="кухонная доска" class="main__board-img">
-            <img src="./styles/images/cup_of_coffee.png" alt="кружка кофе" class="main__coffeecup-img">
-            <img src="./styles/images/coffee_bean.png" alt="кофейные зерна" class="main__coffee-bean-img">
-            <img src="./styles/images/cinabon.png" alt="синабон" class="main__cinnamon-img">
-            <img src="./styles/images/cookie.png" alt="печенька" class="main__cookie-img">
-        </div>
-    </main>
-
-    <section class="menu center" id="menu">
-
-
+      <section class="menu center" id="menu">
         <h2 class="menu__title">Меню</h2>
 
-        <input type="radio" checked id="coffee" class="menu__input" name="menu" value="coffee">
-        <input type="radio" id="desserts" class="menu__input" name="menu" value="desserts">
-        <input type="radio" id="snacks" class="menu__input" name="menu" value="snacks">
+        <input
+          type="radio"
+          checked
+          id="coffee"
+          class="menu__input"
+          name="menu"
+          value="coffee"
+        />
+        <input
+          type="radio"
+          id="desserts"
+          class="menu__input"
+          name="menu"
+          value="desserts"
+        />
+        <input
+          type="radio"
+          id="snacks"
+          class="menu__input"
+          name="menu"
+          value="snacks"
+        />
 
         <div class="menu__label-block">
-            <label class="menu__label" for="coffee">Кофе</label>
-            <label class="menu__label" for="desserts">Десерты</label>
-            <label class="menu__label" for="snacks">Закуски</label>
+          <label class="menu__label" for="coffee">Кофе</label>
+          <label class="menu__label" for="desserts">Десерты</label>
+          <label class="menu__label" for="snacks">Закуски</label>
         </div>
 
         <div class="menu__cards coffee">
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/cappuccino_almond.png"
-                        alt="кружка кофе капучино на миндальном молоке" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Капучино на миндальном молоке с кокосовым сиропом</p>
-                    <p class="product-card__vol">350 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/cappuccino_almond.png"
+                alt="кружка кофе капучино на миндальном молоке"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Капучино на миндальном молоке с кокосовым сиропом
+              </p>
+              <p class="product-card__vol">350 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/latte_coconut.png" alt="кружка кофе латте на кокосовом молоке"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Латте на кокосовом молоке с кленовым сиропом</p>
-                    <p class="product-card__vol">350 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/latte_coconut.png"
+                alt="кружка кофе латте на кокосовом молоке"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Латте на кокосовом молоке с кленовым сиропом
+              </p>
+              <p class="product-card__vol">350 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/raf.png" alt="кружка кофе раф" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">360₽</h3>
-                    <p class="product-card__desc">Раф с карамельным сиропом и шоколадом</p>
-                    <p class="product-card__vol">250 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/raf.png"
+                alt="кружка кофе раф"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">360₽</h3>
+              <p class="product-card__desc">
+                Раф с карамельным сиропом и шоколадом
+              </p>
+              <p class="product-card__vol">250 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/americano.png" alt="кружка кофе американо"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Классический американо с зарядом бодрости</p>
-                    <p class="product-card__vol">300 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/americano.png"
+                alt="кружка кофе американо"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Классический американо с зарядом бодрости
+              </p>
+              <p class="product-card__vol">300 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/flate-white.png" alt="кружка кофе флет уайт"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Флет уайт с насыщенным вкусом эфиопского эспрессо</p>
-                    <p class="product-card__vol">300 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/flate-white.png"
+                alt="кружка кофе флет уайт"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Флет уайт с насыщенным вкусом эфиопского эспрессо
+              </p>
+              <p class="product-card__vol">300 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/latte_oat.png" alt="кружка кофе латте на овсяном молоке"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Латте на овсяном молоке с добавлением корицы</p>
-                    <p class="product-card__vol">300 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/latte_oat.png"
+                alt="кружка кофе латте на овсяном молоке"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Латте на овсяном молоке с добавлением корицы
+              </p>
+              <p class="product-card__vol">300 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/espresso_double.png" alt="кружка кофе двойной эспрессо"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">180₽</h3>
-                    <p class="product-card__desc">Двойной эспрессо с высоким зарядом энергии</p>
-                    <p class="product-card__vol">300 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/espresso_double.png"
+                alt="кружка кофе двойной эспрессо"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">180₽</h3>
+              <p class="product-card__desc">
+                Двойной эспрессо с высоким зарядом энергии
+              </p>
+              <p class="product-card__vol">300 мл</p>
+            </div>
+          </article>
 
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/coffee/cappuccino_soy.png"
-                        alt="кружка кофе капучино на соевом молоке" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Капучино на соевом молоке с ореховым сиропом</p>
-                    <p class="product-card__vol">300 мл</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/coffee/cappuccino_soy.png"
+                alt="кружка кофе капучино на соевом молоке"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Капучино на соевом молоке с ореховым сиропом
+              </p>
+              <p class="product-card__vol">300 мл</p>
+            </div>
+          </article>
         </div>
 
-        
         <div class="menu__cards desserts">
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/cinnamon.png" alt="синабон" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Синабон с ароматной корицей и глазурью</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/puff.png" alt="слойка" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Воздушная датская слойка с нежным кремом</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/creme-brulee.png" alt="крем-брюле"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">360₽</h3>
-                    <p class="product-card__desc">Нежный крем-брюле с ягодами и карамельной корочкой </p>
-                    <p class="product-card__vol">150 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/snail-pastry.png" alt="улитка с джемом"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Улитка с яблочно-лимонным джемом и изюмом</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/chocolate-cake.png" alt="шоколадный торт"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Шоколадно-кофейный торт с глубоким вкусом какао</p>
-                    <p class="product-card__vol">170 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/raspberry-cake.png" alt="тарталетка с малиной"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">180₽</h3>
-                    <p class="product-card__desc">Шоколадная тарталетка с кремом и малиной</p>
-                    <p class="product-card__vol">150 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/honey-cake.png" alt="медовик" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Классический медовик со сливочным кремом</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/dessert/cake.png" alt="кусок торта" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Синабон с ароматной корицей и глазурью</p>
-                    <p class="product-card__vol">300 гр</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/cinnamon.png"
+                alt="синабон"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Синабон с ароматной корицей и глазурью
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/puff.png"
+                alt="слойка"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Воздушная датская слойка с нежным кремом
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/creme-brulee.png"
+                alt="крем-брюле"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">360₽</h3>
+              <p class="product-card__desc">
+                Нежный крем-брюле с ягодами и карамельной корочкой
+              </p>
+              <p class="product-card__vol">150 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/snail-pastry.png"
+                alt="улитка с джемом"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Улитка с яблочно-лимонным джемом и изюмом
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/chocolate-cake.png"
+                alt="шоколадный торт"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Шоколадно-кофейный торт с глубоким вкусом какао
+              </p>
+              <p class="product-card__vol">170 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/raspberry-cake.png"
+                alt="тарталетка с малиной"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">180₽</h3>
+              <p class="product-card__desc">
+                Шоколадная тарталетка с кремом и малиной
+              </p>
+              <p class="product-card__vol">150 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/honey-cake.png"
+                alt="медовик"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Классический медовик со сливочным кремом
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/dessert/cake.png"
+                alt="кусок торта"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Синабон с ароматной корицей и глазурью
+              </p>
+              <p class="product-card__vol">300 гр</p>
+            </div>
+          </article>
         </div>
 
-        
         <div class="menu__cards snacks">
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/almond.png" alt="миндаль" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Миндаль — идеальная закуска для перекуса</p>
-                    <p class="product-card__vol">200 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/cookies.png" alt="печенье" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">360₽</h3>
-                    <p class="product-card__desc">Классическое печенье с кусочками шоколада</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/bagels.png" alt="баранки" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Баранки с легкой солью — отличное дополнение к кофе</p>
-                    <p class="product-card__vol">350 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/poppy-maffin.png" alt="булочка с маком"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Булочка с маком, покрытая нежной сахарной глазурью</p>
-                    <p class="product-card__vol">150 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/cashew.png" alt="кешью" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">270₽</h3>
-                    <p class="product-card__desc">Свежий, хрустящий кешью — полезный перекус</p>
-                    <p class="product-card__vol">300 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/cookie-chocolate.png" alt="мягкое печенье"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">160₽</h3>
-                    <p class="product-card__desc">Мягкое печенье с начинкой из шоколада</p>
-                    <p class="product-card__vol">150 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/pancakes.png" alt="панкейки" class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">180₽</h3>
-                    <p class="product-card__desc">Нежные панкейки с сладким медом и маслом</p>
-                    <p class="product-card__vol">300 гр</p>
-                </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__img">
-                    <img src="./styles/images/menu/snack/samosa.png" alt="треугольные пирожки"
-                        class="product-card__image">
-                </div>
-                <div class="product-card__info">
-                    <h3 class="product-card__price">240₽</h3>
-                    <p class="product-card__desc">Сытные треугольники с сырной начинкой</p>
-                    <p class="product-card__vol">250 гр</p>
-                </div>
-            </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/almond.png"
+                alt="миндаль"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Миндаль — идеальная закуска для перекуса
+              </p>
+              <p class="product-card__vol">200 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/cookies.png"
+                alt="печенье"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">360₽</h3>
+              <p class="product-card__desc">
+                Классическое печенье с кусочками шоколада
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/bagels.png"
+                alt="баранки"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Баранки с легкой солью — отличное дополнение к кофе
+              </p>
+              <p class="product-card__vol">350 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/poppy-maffin.png"
+                alt="булочка с маком"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Булочка с маком, покрытая нежной сахарной глазурью
+              </p>
+              <p class="product-card__vol">150 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/cashew.png"
+                alt="кешью"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">270₽</h3>
+              <p class="product-card__desc">
+                Свежий, хрустящий кешью — полезный перекус
+              </p>
+              <p class="product-card__vol">300 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/cookie-chocolate.png"
+                alt="мягкое печенье"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">160₽</h3>
+              <p class="product-card__desc">
+                Мягкое печенье с начинкой из шоколада
+              </p>
+              <p class="product-card__vol">150 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/pancakes.png"
+                alt="панкейки"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">180₽</h3>
+              <p class="product-card__desc">
+                Нежные панкейки с сладким медом и маслом
+              </p>
+              <p class="product-card__vol">300 гр</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./styles/images/menu/snack/samosa.png"
+                alt="треугольные пирожки"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__price">240₽</h3>
+              <p class="product-card__desc">
+                Сытные треугольники с сырной начинкой
+              </p>
+              <p class="product-card__vol">250 гр</p>
+            </div>
+          </article>
         </div>
-    </section>
-</body>
+      </section>
 
+      <section class="reviews center" id="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__container">
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/irina.png" alt="изображение светловолосой девушки" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Ирина</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    Очень уютное место! Всегда чувствуешь себя желанным гостем, а ваши бариста не только готовят отличный и вкусный кофе, но и могут подсказать что-то новенькое попробовать. 
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/igor.png" alt="изображение молодого человека" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Игорь</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    Я настоящий кофеман, и «Зернышко» удивило меня качеством! Здесь всегда свежие зерна и интересные рецепты — каждый раз нахожу новый вкус для себя. Рекомендую всем своим друзьям.
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/alex.png" alt="изображение молодого человека" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Александр</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    Приятно видеть, что кофейня заботится о природе. Экологичная упаковка, скидка за свою чашку — такие мелочи, а настро-ение поднимают! Приятно, что здесь думают  о планете.
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/elsa.png" alt="изображение темноволосой девушки" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Эльза</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    В «Зернышке» особенная атмосфера: уютно, стильно и спокойно. Идеальное место, чтобы сбежать от городской суеты, почитать книгу или просто расслабиться за чашкой кофе.
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/andrei.png" alt="изображение молодого человека" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Андрей</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    Бариста всегда приветливые и открытые к общению. Люблю, когда заходишь, и тебя встречают с улыбкой и вниманием к деталям. Кажется, что здесь всех знают по имени и каждому рады.
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__person-box">
+                    <img src="./styles/images/kris.png" alt="изображение девушки" class="review-card__img">
+                    <div class="review-card__mark-box">
+                        <h4 class="review-card__name">Кристина</h4>
+                        <div class="review-card__star-box">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star">
+                            <img src="./styles/images/star.svg" alt="звезда" class="review-card__star"></div>
+                    </div>
+                </div>
+                <p class="review-card__text">
+                    Каждая чашка кофе в «Зернышке» словно маленький шедевр. Ощущается внимание к мелочам — от аромата до оформления напитка. Это то место, куда хочется возвращаться снова и снова.
+                </p>
+            </article>
+
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
