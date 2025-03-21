@@ -27,14 +27,12 @@
         }
     }
 
-    .main {
+    .main-page {
         margin-top: 90px;
         flex-direction: column;
-        padding-left: 16px;
 
         &__info {
             padding-top: 50px;
-            align-self: center;
         }
 
         &__title {
@@ -58,6 +56,24 @@
             height: 48px;
             align-self: center;
             font-size: 14px;
+        }
+    }
+
+    .about-us {
+        &__title {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        &__cards-box {
+            margin-top: 24px;
+            row-gap: 16px;
+        }
+    }
+
+    .info-card {
+        &__img {
+            display: none;
         }
     }
 
@@ -95,6 +111,63 @@
 
         &__desc, &__vol {
             font-size: 12px;
+        }
+    }
+
+    .reviews {
+        &__title {
+            font-size: 36px;
+            text-align: center;
+        }
+        &__container {
+            margin-top: 24px;
+            row-gap: 16px;
+        }
+    }
+
+    .contacts {
+        &__title {
+            font-size: 36px;
+            text-align: center; 
+        }
+
+        &__content-block {
+            margin-top: 24px;
+        }
+
+        &__content-wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__info {
+            width: 320px;
+        }
+
+        &__booking {
+            width: 320px;
+        }
+
+        &__map {
+            display: none;
+        }
+        
+    }
+
+    .footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 135px;
+        &__link-list {
+            flex-direction: column;
+        }
+
+        &__link-box {
+            row-gap: 8px;
+        }
+
+        &__icon-box {
+            justify-content: flex-start;
         }
     }
 }
